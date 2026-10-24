@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Subham Nayak · Software Engineer</title>
+<meta name="description" content="Subham Nayak is a software engineer in Bengaluru with 2+ years of experience in Java, Spring Boot, React and SQL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF; --surface:#FFFFFF; --ink:#0F172A; --muted:#475569; --line:#E2E8F0; --accent:#1D4ED8; --accent-ink:#FFFFFF; --soft:#EFF4FF;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); color-scheme:light;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.5rem}
+header.top{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1.25rem 0;border-bottom:1px solid var(--line)}
+header.top b{font-weight:700}
+nav a{margin-left:1.5rem;text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{padding:clamp(3rem,8vw,5.5rem) 0 3rem}
+.hero h1{font-size:clamp(2.5rem,7vw,4.25rem);line-height:1.05;letter-spacing:-.02em;font-weight:700;margin:0}
+.hero .role{margin:.75rem 0 0;font-size:1.35rem;font-weight:500;color:var(--accent)}
+.hero .summary{max-width:40rem;margin:1.5rem 0 0;color:var(--muted);font-size:1.15rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.btn{display:inline-block;padding:.7rem 1.3rem;border-radius:.5rem;font-weight:600;text-decoration:none;border:1px solid var(--line);background:var(--surface);color:var(--ink)}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:3rem;border:1px solid var(--line);border-radius:.75rem;background:var(--surface)}
+.facts div{padding:1.1rem 1.4rem}
+.facts div+div{border-left:1px solid var(--line)}
+.facts dt{font-size:.9rem;color:var(--muted)}
+.facts dd{margin:.15rem 0 0;font-weight:600}
+section{padding:3.25rem 0;border-top:1px solid var(--line)}
+h2{font-size:1.6rem;letter-spacing:-.01em;margin:0 0 1.75rem}
+.job{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.2fr);gap:1rem 2.5rem}
+.job h3{margin:0;font-size:1.2rem}
+.job .when{color:var(--muted);margin:.2rem 0 0}
+.job ul{margin:0;padding-left:1.2rem;max-width:42rem}
+.job li{margin-bottom:.5rem}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.25rem}
+.chips span{padding:.2rem .75rem;border-radius:999px;background:var(--soft);color:var(--accent);font-size:.9rem;font-weight:500}
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:.75rem;padding:1.25rem 1.4rem}
+.card h3{margin:0 0 .4rem;font-size:1rem}
+.card p{margin:0;color:var(--muted)}
+.edu p{margin:0}
+.edu p+p{color:var(--muted)}
+.about{max-width:42rem}
+.about p{margin:0 0 1rem}
+.contact h2{margin-bottom:1rem}
+.contact p{margin:0 0 1.25rem;color:var(--muted);max-width:36rem}
+footer{padding:1.75rem 0 2.5rem;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (max-width:720px){.facts{grid-template-columns:1fr}.facts div+div{border-left:0;border-top:1px solid var(--line)}.job,.skills{grid-template-columns:1fr}nav a{margin-left:1rem}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero h1,.hero .role,.hero .summary,.hero .actions,.facts{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero .role{animation-delay:.12s}.hero .summary{animation-delay:.24s}.hero .actions{animation-delay:.36s}.facts{animation-delay:.48s}
+nav a{position:relative}
+nav a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .25s ease}
+nav a:hover::after,nav a:focus-visible::after{transform:scaleX(1)}
+.btn{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px rgba(15,23,42,.14)}
+.card{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 10px 24px rgba(15,23,42,.08)}
+.chips span{transition:background .2s ease,color .2s ease,transform .2s ease}
+.chips span:hover{background:var(--accent);color:var(--accent-ink);transform:translateY(-1px)}
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.js .reveal.in{opacity:1;transform:none}
+.reveal.in .card,.reveal.in .chips span,.reveal.in .job li{animation:rise .6s cubic-bezier(.2,.7,.2,1) backwards;animation-delay:calc(var(--i,0)*70ms + 120ms)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <b>Subham Nayak</b>
+    <nav aria-label="Primary"><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Subham Nayak</h1>
+      <p class="role">Software Engineer</p>
+      <p class="summary">I build, test and maintain web applications with Java, Spring Boot and React. I have 2+ years of experience taking features from requirements through to deployment and support.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:nayaksubham4u@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/subham4u">LinkedIn</a>
+        <a class="btn" href="https://github.com/subham-2-coder">GitHub</a>
+      </div>
+      <dl class="facts">
+        <div><dt>Experience</dt><dd>2+ years</dd></div>
+        <div><dt>Location</dt><dd>Bengaluru, Karnataka</dd></div>
+        <div><dt>Availability</dt><dd>Within 5 days</dd></div>
+      </dl>
+    </div>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <article class="job">
+        <div><h3>Software Engineer</h3><p class="when">Ideslabs Private Limited<br>June 2024 – Present</p></div>
+        <div>
+          <ul>
+            <li>Build, maintain and enhance applications to meet business and technical requirements.</li>
+            <li>Work through the full lifecycle: requirement analysis, development, testing, debugging, deployment and maintenance.</li>
+            <li>Find and fix defects, improving application stability and reliability.</li>
+            <li>Work with databases to manage, retrieve and validate application data.</li>
+            <li>Collaborate with the team and follow coding standards and project guidelines.</li>
+          </ul>
+          <div class="chips"><span>Java</span><span>Spring Boot</span><span>React.js</span><span>Angular</span><span>REST APIs</span><span>MySQL</span><span>PostgreSQL</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="card"><h3>Languages</h3><p>Java, JavaScript, SQL</p></div>
+        <div class="card"><h3>Frontend</h3><p>React.js, Angular, HTML, CSS</p></div>
+        <div class="card"><h3>Backend</h3><p>Java, Spring Boot, REST APIs</p></div>
+        <div class="card"><h3>Databases</h3><p>SQL, MySQL, PostgreSQL</p></div>
+        <div class="card"><h3>Tools</h3><p>Git, GitHub, Postman, VS Code, IntelliJ IDEA</p></div>
+        <div class="card"><h3>Practices</h3><p>SDLC, Agile, debugging, requirement analysis, software testing</p></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <div class="about">
+        <p>I'm a software engineer in Bengaluru. I enjoy turning requirements into working features and tracking down what's behind a bug. I work in English, Hindi and Odia.</p>
+        <div class="edu"><p>B.Sc. in Chemistry (Honours)</p><p>Utkal University</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>I'm available to start in under 5 days. The best way to reach me is by email.</p>
+      <div class="actions" style="margin-top:0">
+        <a class="btn primary" href="mailto:nayaksubham4u@gmail.com">nayaksubham4u@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/subham4u">LinkedIn</a>
+        <a class="btn" href="https://github.com/subham-2-coder">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Subham Nayak · Bengaluru, Karnataka</footer>
+</div>
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  document.documentElement.classList.add('js');
+  ['.skills .card','.chips span','.job li'].forEach(function(sel){
+    [].forEach.call(document.querySelectorAll(sel),function(el,i){el.style.setProperty('--i',i%8)});
+  });
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:.12});
+  [].forEach.call(document.querySelectorAll('main section'),function(s){s.classList.add('reveal');io.observe(s)});
+})();
+</script>
+</body>
+</html>
